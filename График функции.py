@@ -28,7 +28,7 @@ class FunctionPlotter(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle('График функции')
-        self.setGeometry(100, 100, 800, 600)
+        self.setGeometry(800, 800, 800, 800)
         self.initUI()
 
     def initUI(self):
@@ -40,11 +40,11 @@ class FunctionPlotter(QWidget):
         input_layout.addWidget(self.function_input)
 
         input_layout.addWidget(QLabel("X min:"))
-        self.x_min_input = QLineEdit("-10")
+        self.x_min_input = QLineEdit("-15")
         input_layout.addWidget(self.x_min_input)
 
         input_layout.addWidget(QLabel("X max:"))
-        self.x_max_input = QLineEdit("10")
+        self.x_max_input = QLineEdit("15")
         input_layout.addWidget(self.x_max_input)
 
         self.plot_button = QPushButton("Построить график")
